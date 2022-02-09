@@ -1,0 +1,13 @@
+name: dart_benchmarks
+description: A set of dart benchmarks
+version: 1.0.0
+homepage: https://github.com/lesnitsky/dart_benchmarks
+
+environment:
+  sdk: '>=2.16.0 <3.0.0'
+
+dependencies:
+  benchmark_harness: any
+
+dev_dependencies:
+  lints: ^1.0.0
