@@ -27,9 +27,6 @@ class Benchmark extends BenchmarkBase {
   void run() async {
     it.fold<int>(0, (a, b) => a + b);
   }
-
-  @override
-  void teardown() {}
 }
 
 void main(List<String> args) {

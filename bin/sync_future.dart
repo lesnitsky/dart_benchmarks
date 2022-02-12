@@ -29,7 +29,7 @@ class SyncFutureGenerator implements Generator {
   }
 }
 
-late Random _r;
+final _r = Random(255);
 
 class Benchmark extends BenchmarkBase {
   final Generator generator;
@@ -44,14 +44,6 @@ class Benchmark extends BenchmarkBase {
     final v = await generator.generate();
     generator.values.add(v);
   }
-
-  @override
-  void setup() {
-    _r = Random(255);
-  }
-
-  @override
-  void teardown() {}
 }
 
 void main(List<String> args) {
